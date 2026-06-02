@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>实验说明 - 版本3</title>
+
+<style>
+body {
+    background-color: #fff;
+    font-family: "Microsoft YaHei", "SimSun", "Times New Roman", serif;
+    color: #222;
+    margin: 0;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    line-height: 2;
+}
+
+h1 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 25px;
+}
+
+.red {
+    color: #b94b3a;
+    font-weight: bold;
+}
+
+.emphasis {
+    color: #b94b3a;
+    font-weight: bold;
+}
+
+.insurance-table {
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.insurance-table p {
+    margin-bottom: 10px;
+}
+
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<h1>实验说明</h1>
+
+<p>请设想您拥有一栋房子，持有两个时期，并计划在第2期结束时将其出售。该房子在第一期开始时的价值为 <span class="red">100,000泰勒</span>，“泰勒”是一种假想的货币单位，就像美金或英镑一样。</p>
+
+<p>您在第一期刚开始时的全部资产包括您所拥有的房子的价值以及 <span class="red">5,000泰勒</span> 的现金。</p>
+
+<p>强台风可能发生在这个两期游戏的任何一期。请注意，台风可能发生在第一期或第二期，也可能在两期都发生，也可能在两期都不发生。</p>
+
+<p>如果台风发生在其中一期，您的房子将会遭受价值 <span class="red">50,000泰勒</span> 的损失。如果您购买了保险，您将在遭受台风时免受此损失。</p>
+
+<p>如果您购买了保险并且台风发生，那么保险公司将会补偿您的损失，使您可以重建房屋，让它保持台风发生前的价值。</p>
+
+<p>如果您没有购买保险但是台风发生，那么您的房子的价值会损失 <span class="red">50,000泰勒</span>。</p>
+
+<p>因此，在每一期结束时，您的房子的价值取决于台风是否发生以及您是否购买了保险。</p>
+
+<p class="emphasis">您在第二期结束时的总资产等于“您在第二期结束时的房子的价值”加上“<span class="red">5,000泰勒</span>的现金”并减去“您在两期中总共支付的保费”。</p>
+
+<p>台风在第一期发生的可能性为1/25（即4%）。如果在第一期没有发生台风，那么台风在第二期发生的可能性仍然不变（1/25）。然而，如果在第一期发生了台风，那么台风在第二期发生的可能性会提高到1/20（即5%）。台风是否发生由计算机随机决定。</p>
+
+<p>您可以选择购买单期保险合同或者双期保险合同去保障您的房子的价值，避免潜在的台风损失。单期和双期保险合同在各期的保费如下：</p>
+
+<div class="insurance-table">
+<p><strong>单期保险合同</strong></p>
+<p>第一期：<span class="red">2,000泰勒</span></p>
+<p>第二期（如果第一期没发生台风）：<span class="red">2,000泰勒</span></p>
+<p>第二期（如果第一期发生台风）：<span class="red">2,500泰勒</span></p>
+
+<p>或者</p>
+
+<p><strong>双期保险合同（一次性购买两个期的保险）</strong></p>
+<p>第一期保费：<span class="red">2,110泰勒</span></p>
+<p>第二期保费：<span class="red">2,110泰勒</span></p>
+</div>
+
+<h2>游戏规则</h2>
+
+<p>当您做完在第一期中购买保险的决策之后，计算机屏幕上将会显示台风是否在这一期发生。</p>
+
+<p>如果您购买了双期保险合同，那么您自然也获得了避免第二期损失的保障。如果您没有购买合同或者仅在第一期购买了单期保险合同，那么您在第二期开始的时候还必须决定是否在第二期购买保险。</p>
+
+<p>一旦第一轮（两期）游戏结束，您将遵照相同规则开始新一轮的两期游戏。您将完成 <span class="red">30轮</span> 这样的两期游戏。</p>
+
+</div>
+</body>
+</html>
